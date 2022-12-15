@@ -1,0 +1,30 @@
+﻿@model ICollection<KursovaRabota.ViewModels.Categories.CategoryDetailViewModel>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<button class="btn btn-primary" onclick="location.href='@Url.Action("Edit")'">Create new </button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Supplier</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@Html.ActionLink(@item.CategoryName, "Details", new { CategoryId =  item.Id })</td>
+                    <td>
+                        <div class="actions">
+                            <button class="btn btn-primary" onclick="location.href='@Url.Action("Edit", "Categories", new { CategoryId = item.Id })'">Edit</button>
+                            <button class="btn btn-primary" onclick="location.href='@Url.Action("Delete", "Categories", new { CategoryId = item.Id })'">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
