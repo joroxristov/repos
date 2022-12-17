@@ -25,6 +25,6 @@ namespace KursovaRabota.ViewModels.Cars
         public string ImageUrl { get; set; }
 
         public List<BrandDetailViewModel> BrandsList { get; set; }
-        public List<CreateEditCategoryViewModel> CategoriesList { get; set; }
+        public List<CategoryDetailViewModel> CategoriesList { get; set; }
     }
 }

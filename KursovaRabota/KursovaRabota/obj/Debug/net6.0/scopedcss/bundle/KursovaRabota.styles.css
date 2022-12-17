@@ -1,3 +1,120 @@
+/* _content/KursovaRabota/Views/Cars/AllCars.cshtml.rz.scp.css */
+*[b-di0i7owa77] {
+    box-sizing: border-box;
+}
+
+.cars[b-di0i7owa77] {
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.car[b-di0i7owa77] {
+    box-shadow: 2px 2px 2px #ccc;
+    max-width: 150px;
+    margin: 0.25rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.img[b-di0i7owa77] {
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.info[b-di0i7owa77] {
+    margin-top: auto;
+}
+
+.car .title[b-di0i7owa77] {
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.car .brand[b-di0i7owa77] {
+    padding: 0.25rem;
+    text-align: center
+}
+
+.car .price[b-di0i7owa77] {
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: red;
+}
+
+.car .actions[b-di0i7owa77] {
+    padding: 0.25rem;
+    display: flex;
+}
+
+.actions button[b-di0i7owa77] {
+    border: 0;
+    flex-grow: 1;
+    text-decoration: none !important;
+}
+
+.actions[b-di0i7owa77] {
+    display: flex;
+}
+/* _content/KursovaRabota/Views/Cars/Details.cshtml.rz.scp.css */
+*[b-awtnol7x0w] {
+    box-sizing: border-box;
+}
+
+
+.rate-container[b-awtnol7x0w] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .rate-container img[b-awtnol7x0w] {
+        width: 150px;
+        margin: 0 0.5rem;
+    }
+
+.car[b-awtnol7x0w] {
+    box-shadow: 2px 2px 2px #ccc;
+    display: flex;
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+    .car img[b-awtnol7x0w] {
+        max-width: 450px;
+        border-radius: 5px 5px 0 0;
+        margin-right: 1.5rem;
+    }
+
+.details[b-awtnol7x0w] {
+    flex-grow: 1;
+}
+
+    .details .title[b-awtnol7x0w] {
+        padding: 0.25rem;
+    }
+
+    .details .price[b-awtnol7x0w] {
+        padding: 0.25rem;
+        font-size: 1.1rem;
+        color: red;
+    }
+/* _content/KursovaRabota/Views/Cars/Edit.cshtml.rz.scp.css */
+input[type="submit"][b-bmhxzyoiwa] {
+    width: 100%;
+    margin-top: 1rem;
+}
 /* _content/KursovaRabota/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

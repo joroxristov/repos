@@ -1,0 +1,37 @@
+﻿@model KursovaRabota.ViewModels.CarSuppliers.CarSupplierDetailViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>CarSupplierDetailViewModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SupplierName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SupplierName)
+        </dd>
+        <span>Cars: </span>
+        <ul>
+            @foreach (var item in Model.Cars)
+            {
+                <li>@item.Name</li>
+            }
+        </ul>
+    </dl>
+</div>
+<div>
+    <div class="actions">
+        <button class="btn btn-primary" onclick="location.href='@Url.Action("EditCarSupplier", "CarSupplier", new { id = Model.Id })'">Edit</button>
+        <button class="btn btn-primary" onclick="location.href='@Url.Action("ListAllCarSuppliers", "CarSupplier")'">Back to List</button>
+    </div>
+</div>

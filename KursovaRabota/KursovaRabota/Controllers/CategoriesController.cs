@@ -53,6 +53,32 @@ namespace KursovaRabota.Controllers
                 }
             }
         }
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Edit(CreateEditCategoryViewModel model)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            if (model.Id == 0)
+            {
+                this.categoriesService.Add(model);
+            }
+            else
+            {
+                this.categoriesService.Update(model);
+            }
+            return RedirectToAction("ListAllCategories");
+        }
+
+        public IActionResult Delete(int CategoryId)
+        {
+            this.categoriesService.Delete(CategoryId);
+            return RedirectToAction("ListAllCategories");
+        }
     }
 }
 

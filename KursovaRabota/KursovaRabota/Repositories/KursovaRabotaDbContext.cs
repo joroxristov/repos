@@ -28,7 +28,7 @@ namespace KursovaRabota.Repositories
         {
 
             modelBuilder.Entity<Car>()
-                .HasOne(car => car.Car_CarSuppliers)
+                .HasMany(car => car.Car_CarSuppliers)
                 .WithOne()
                 .HasForeignKey(car_CarSupplier => car_CarSupplier.CarId)
                 .OnDelete(DeleteBehavior.Restrict);
@@ -46,18 +46,18 @@ namespace KursovaRabota.Repositories
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<CarSupplier>()
-                .HasMany(carSupplier => carSupplier.Car_CarSupplier)
+                .HasMany(carSupplier => carSupplier.Car_CarSuppliers)
                 .WithOne()
-                .HasForeignKey(car_CarSupplier => car_CarSupplier.CarId)
+                .HasForeignKey(car_CarSupplier => car_CarSupplier.CarSupplierId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Car_CarSupplier>()
                 .HasOne(car_CarSupplier => car_CarSupplier.Car)
-                .WithMany(car => car.Car_CarSupplier);
+                .WithMany(car => car.Car_CarSuppliers);
 
             modelBuilder.Entity<Car_CarSupplier>()
                 .HasOne(car_CarSupplier => car_CarSupplier.CarSupplier)
-                .WithMany(carSupplier => CarSupplier.Car_CarSupplier);
+                .WithMany(carSupplier => carSupplier.Car_CarSuppliers);
 
         }
 

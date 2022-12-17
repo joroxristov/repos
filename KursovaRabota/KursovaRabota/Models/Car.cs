@@ -5,7 +5,7 @@ namespace KursovaRabota.Models
 {
     public class Car
     {
-        internal readonly object Car_CarSuppliers;
+      
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -26,7 +26,7 @@ namespace KursovaRabota.Models
 
         public virtual Category Category { get; set; }
 
-        public virtual ICollection<Car_CarSupplier> Car_ShoeSuppliers { get; set; }
+        public virtual ICollection<Car_CarSupplier> Car_CarSuppliers { get; set; }
             = new List<Car_CarSupplier>();
     }
 }

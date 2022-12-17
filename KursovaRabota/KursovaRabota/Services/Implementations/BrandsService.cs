@@ -1,11 +1,12 @@
 ﻿using KursovaRabota.Models;
 using KursovaRabota.Repositories.Abstractions;
+using KursovaRabota.Services.Abstractions;
 using KursovaRabota.ViewModels.Brands;
 using Microsoft.EntityFrameworkCore;
 
 namespace KursovaRabota.Services.Implementations
 {
-    public class BrandsService
+    public class BrandsService: IBrandsService
     {
         private readonly IBrandsRepository brandsRepository;
 

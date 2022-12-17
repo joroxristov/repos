@@ -10,6 +10,7 @@ namespace KursovaRabota.Repositories.Abstractions
 
         void Insert(CarSupplier carSupplier);
 
+
         void Update(CarSupplier carSupplier);
 
         void Delete(int id);

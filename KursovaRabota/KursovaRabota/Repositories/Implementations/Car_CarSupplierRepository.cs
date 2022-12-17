@@ -1,7 +1,7 @@
 ﻿using KursovaRabota.Repositories.Abstractions;
 using KursovaRabota.Models;
 using Microsoft.EntityFrameworkCore;
-using static KursovaRabota.Repositories.Implementations.Car_CarSupplierRepository;
+
 
 namespace KursovaRabota.Repositories.Implementations
 {

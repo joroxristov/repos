@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Home_R\source\repos\KursovaRabota\KursovaRabota
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Brands/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Brands/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Brands/ListAllBrands.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXExpc3RBbGxCcmFuZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/CarSupplier/CarSupplierDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyU3VwcGxpZXJcQ2FyU3VwcGxpZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/CarSupplier/EditCarSupplier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyU3VwcGxpZXJcRWRpdENhclN1cHBsaWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/CarSupplier/ListAllCarSuppliers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyU3VwcGxpZXJcTGlzdEFsbENhclN1cHBsaWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,8 +60,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Profile/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -51,6 +75,18 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Cars/AllCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xBbGxDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-di0i7owa77
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Cars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-awtnol7x0w
+
+[C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Cars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-bmhxzyoiwa
 
 [C:/Users/Home_R/source/repos/KursovaRabota/KursovaRabota/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

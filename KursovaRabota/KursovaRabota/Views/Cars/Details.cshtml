@@ -1,0 +1,28 @@
+﻿@model KursovaRabota.ViewModels.Cars.CarDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <dl class="row">
+        <div class="car">
+            <img src=@Html.DisplayFor(model => model.ImageUrl) />
+            <div class="details">
+                <h4 class="title">@Html.DisplayFor(model => model.Name)</h4>
+                <div class="brand">Brand: @Html.DisplayFor(model => model.Brand.BrandName)</div>
+                <div class="category">Category: @Html.DisplayFor(model => model.Category.CategoryName)</div>
+                <div class="price">@Html.DisplayFor(model => model.Price) BGN</div>
+
+       
+
+                <hr />
+
+                <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Add", "Cart", new { CarId = Model.Id })'">Add to cart</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Edit", "Cars", new { CarId = Model.Id })'">Edit</button>
+            </div>
+        </div>
+    </dl>
+</div>
+<div>
+</div>

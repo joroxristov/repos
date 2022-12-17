@@ -10,11 +10,11 @@ namespace KursovaRabota.Services.Abstractions
 
         List<SelectableCarsViewModel> GetSelectableCars();
 
-        void Add(CreateEditCarSupplierViewModel createEditCarSupplierViewModel);
+        void Add(CarCreateEditViewModel carCreateEditViewModel);
 
-        void Update(CreateEditCarSupplierViewModel createEditCarSupplierViewModel);
+        void Update(CarCreateEditViewModel carCreateEditViewModel);
 
         void Delete(int CarId);
-        void Update(CarCreateEditViewModel model);
+        
     }
 }

@@ -1,0 +1,45 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+.rate-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .rate-container img {
+        width: 150px;
+        margin: 0 0.5rem;
+    }
+
+.car {
+    box-shadow: 2px 2px 2px #ccc;
+    display: flex;
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+    .car img {
+        max-width: 450px;
+        border-radius: 5px 5px 0 0;
+        margin-right: 1.5rem;
+    }
+
+.details {
+    flex-grow: 1;
+}
+
+    .details .title {
+        padding: 0.25rem;
+    }
+
+    .details .price {
+        padding: 0.25rem;
+        font-size: 1.1rem;
+        color: red;
+    }

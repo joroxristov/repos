@@ -49,11 +49,11 @@ namespace KursovaRabota.Repositories.Implementations
 
             this.carsDbContext.Entry(car).State = EntityState.Modified;
 
-            this.carsDbContext.Car_CarSuppliers.RemoveRange((Car_CarSupplier)current.Car_CarSuppliers);
+            this.carsDbContext.Car_CarSuppliers.RemoveRange(current.Car_CarSuppliers);
 
             this.carsDbContext.SaveChanges();
 
-            this.carsDbContext.Car_CarSuppliers.AddRange((Car_CarSupplier)current.Car_CarSuppliers);
+            this.carsDbContext.Car_CarSuppliers.AddRange(current.Car_CarSuppliers);
 
             this.carsDbContext.SaveChanges();
         }
@@ -64,7 +64,7 @@ namespace KursovaRabota.Repositories.Implementations
 
             if (car != null)
             {
-                this.carsDbContext.Car_CarSuppliers.RemoveRange((Car_CarSupplier)car.Car_CarSuppliers);
+                this.carsDbContext.Car_CarSuppliers.RemoveRange(car.Car_CarSuppliers);
                 this.dbSet.Remove(car);
             }
             this.carsDbContext.SaveChanges();

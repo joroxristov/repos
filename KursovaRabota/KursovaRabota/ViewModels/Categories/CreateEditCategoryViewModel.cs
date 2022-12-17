@@ -8,6 +8,7 @@ namespace KursovaRabota.ViewModels.Categories
 
         [Required]
         public string CategoryName { get; set; }
+        public List<CategoryDetailViewModel> CategoriesList { get; set; }
     }
 }
 

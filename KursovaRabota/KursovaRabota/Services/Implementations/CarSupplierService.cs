@@ -22,7 +22,8 @@ namespace KursovaRabota.Services.Implementations
         public CarSupplierDetailViewModel GetById(int id)
         {
             var carSupplierInDB = carSupplierRepository.GetAll()
-                .Include(carSupplier => carSupplier.Car_CarSuppliers)
+
+                .Include(carSupplier => carSupplier.Car_CarSuppliers) 
                 .ThenInclude(car_CarSupplier => car_CarSupplier.Car)
                 .FirstOrDefault(carSupplier => carSupplier.Id == id);
 
@@ -54,12 +55,12 @@ namespace KursovaRabota.Services.Implementations
                  .Select(carSupplier => new CarSupplierDetailViewModel
                  {
                      Id = carSupplier.Id,
-                     SupplierName = (Car_CarSupplier)CarSupplier.SupplierName,
+                     SupplierName = carSupplier.SupplierName,
                      Cars = carSupplier.Car_CarSuppliers.Select(car_CarSupplier => new CarDetailsViewModel
                      {
                          Id = car_CarSupplier.Car.Id,
-                         CategoryId = car_CarSupplier.car.CategoryId,
-                         BrandId = car_CarSupplier.car.BrandId,
+                         CategoryId = car_CarSupplier.Car.CategoryId,
+                         BrandId = car_CarSupplier.Car.BrandId,
                          ImageUrl = car_CarSupplier.Car.ImageUrl,
                          Name = car_CarSupplier.Car.Name,
                          Price = car_CarSupplier.Car.Price
@@ -106,7 +107,7 @@ namespace KursovaRabota.Services.Implementations
                 SupplierName = createEditCarSupplierViewModel.SupplierName
             };
 
-            carSupplierRepository.Insert(carSupplier);
+            carSupplierRepository.Insert(carSupplier); // insert
 
             var createdCarSupplier = carSupplierRepository.GetAll()
                 .FirstOrDefault(carSupplier => carSupplier.SupplierName == createEditCarSupplierViewModel.SupplierName);
@@ -133,7 +134,7 @@ namespace KursovaRabota.Services.Implementations
                 .Select(car => new Car_CarSupplier
                 {
                     CarId = car.Id,
-                    CarsSupplierId = createEditCarSupplierViewModel.Id
+                    CarSupplierId = createEditCarSupplierViewModel.Id
                 }).ToList()
             };
             carSupplierRepository.Update(carSupplier);
